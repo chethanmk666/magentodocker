@@ -23,4 +23,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag chethanmk/magentodocker:php8.1
     - name: push to docker
-      run: docker push ${{secrets.DOCKER_USER}}/magentodocker
+      run: docker push ${{secrets.DOCKER_USER}}/magentodocker:php8.1
